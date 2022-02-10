@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" id="Definitions_0sz6tcm" targetNamespace="http://bpmn.io/schema/bpmn" exporter="bpmn-js (https://demo.bpmn.io)" exporterVersion="9.0.0-alpha.2">
+  <bpmn:collaboration id="Collaboration_09a7y8f">
+    <bpmn:participant id="Participant_1flgpqg" name="Personalverwaltung" processRef="Process_1cqrgz9" />
+    <bpmn:participant id="Participant_1iehgq7" name="Bewerberverwaltung" processRef="Process_1xo76uo" />
+    <bpmn:participant id="Participant_1udqlxg" name="Kennzeichnungspflicht" processRef="Process_18h2eh6" />
+    <bpmn:participant id="Participant_0uyhirh" name="Bewerberverwaltung LAK" processRef="Process_01vz4hv" />
+    <bpmn:participant id="Participant_13q9elm" name="Personal LAK" processRef="Process_1i0b4zi" />
+    <bpmn:participant id="Participant_0m2kzhg" name="Lehrgänge" processRef="Process_0ve2e9m" />
+    <bpmn:participant id="Participant_0ukqk3k" name="Auswertungen" processRef="Process_16vew1d" />
+    <bpmn:participant id="Participant_1f8tc9j" name="KF-Entwicklungen PerIS-CC" processRef="Process_15lrkyw" />
+    <bpmn:participant id="Participant_15hi4tr" name="Bewerberverwaltung HPOL" processRef="Process_0f34nfm" />
+  </bpmn:collaboration>
+  <bpmn:process id="Process_1cqrgz9">
+    <bpmn:task id="Activity_1hbjlp1" name="Grundaten" />
+    <bpmn:task id="Activity_0c04vhs" name="Beschäftige- und Dienstverhältnisse" />
+    <bpmn:task id="Activity_0odpjve" name="Dienstjubiläen" />
+    <bpmn:task id="Activity_1wgdm8y" name="Sonstiges" />
+    <bpmn:task id="Activity_0rucb30" name="Personalausgabn" />
+    <bpmn:task id="Activity_0obr3kh" name="Personalentwicklung" />
+    <bpmn:task id="Activity_066g5ka" name="Abordnung/Versetzung Behördenwechsel" />
+    <bpmn:task id="Activity_1yanv32" name="Abwesenheiten" />
+    <bpmn:task id="Activity_0l4yfzf" name="Personalbegleitende Maßnahmen" />
+    <bpmn:task id="Activity_14mab47" name="Dienst-/Arbeitsunfall" />
+    <bpmn:task id="Activity_0y8o0mh" name="Altersteilzeit" />
+    <bpmn:task id="Activity_1k7x5bi" name="Beendigung Arbeits-/Dienstverhältnis" />
+    <bpmn:task id="Activity_1myw85e" name="ZBB relevante Geschäftsfälle" />
+    <bpmn:task id="Activity_0etqwvn" name="Grundtabellen" />
+    <bpmn:task id="Activity_1248gbq" name="Altes Tarifrecht" />
+  </bpmn:process>
+  <bpmn:process id="Process_1xo76uo">
+    <bpmn:task id="Activity_0tid5jr" name="Ausschreibung" />
+    <bpmn:task id="Activity_0i55caw" name="Grunddaten" />
+    <bpmn:task id="Activity_13l87ok" name="Bewerberprozess" />
+    <bpmn:task id="Activity_03bzc8f" name="Bewerber Spezial" />
+  </bpmn:process>
+  <bpmn:process id="Process_18h2eh6">
+    <bpmn:task id="Activity_04r475l" name="Zuweisen der Einsatznummer" />
+  </bpmn:process>
+  <bpmn:process id="Process_01vz4hv">
+    <bpmn:task id="Activity_0k8kx1g" name="Ausschreibung" />
+    <bpmn:task id="Activity_02y4cih" name="Bewerber" />
+    <bpmn:task id="Activity_03ngzen" name="Bewerbungsprozess" />
+    <bpmn:task id="Activity_024agjn" name="Übernahme der Daten" />
+  </bpmn:process>
+  <bpmn:process id="Process_1i0b4zi">
+    <bpmn:task id="Activity_0hsdd3o" name="Info" />
+    <bpmn:task id="Activity_01q3s66" name="Anwärter-/Ausbilungs-Verhältnis" />
+    <bpmn:task id="Activity_06xuic0" name="Prüfungen" />
+    <bpmn:task id="Activity_1lyr1os" name="Seminarvorbereitung/Zuweisung" />
+    <bpmn:task id="Activity_0tgefo6" name="Beendigung" />
+  </bpmn:process>
+  <bpmn:process id="Process_0ve2e9m">
+    <bpmn:task id="Activity_1jhux17" name="Lehrgagsdurchführung" />
+  </bpmn:process>
+  <bpmn:process id="Process_16vew1d">
+    <bpmn:task id="Activity_1ymajs9" name="Personal" />
+    <bpmn:task id="Activity_0zmv52w" name="Stelle" />
+    <bpmn:task id="Activity_17550jk" name="Dienstposten" />
+    <bpmn:task id="Activity_0vp80q0" name="REHADAT" />
+    <bpmn:task id="Activity_0jn6sno" name="Bewerber" />
+    <bpmn:task id="Activity_07nmtwo" name="Bewerber LAK" />
+    <bpmn:task id="Activity_07q7ldh" name="Bewerber HPOL" />
+    <bpmn:task id="Activity_1dbus9s" name="Fachadmin" />
+    <bpmn:task id="Activity_1qu8s96" name="Sonstige" />
+  </bpmn:process>
+  <bpmn:process id="Process_15lrkyw">
+    <bpmn:task id="Activity_1q2ud0q" name="Ansparkonto" />
+  </bpmn:process>
+  <bpmn:process id="Process_0f34nfm">
+    <bpmn:task id="Activity_14o7x74" name="Ausschreibung" />
+    <bpmn:task id="Activity_1bhvlp7" name="Grunddaten" />
+    <bpmn:task id="Activity_1jw91px" name="Bewerberprozess" />
+    <bpmn:task id="Activity_0bfe6ev" name="Bewerber Spezial" />
+  </bpmn:process>
+  <bpmndi:BPMNDiagram id="BPMNDiagram_1">
+    <bpmndi:BPMNPlane id="BPMNPlane_1" bpmnElement="Collaboration_09a7y8f">
+      <bpmndi:BPMNShape id="Participant_1flgpqg_di" bpmnElement="Participant_1flgpqg" isHorizontal="true">
+        <dc:Bounds x="160" y="90" width="600" height="440" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_1hbjlp1_di" bpmnElement="Activity_1hbjlp1">
+        <dc:Bounds x="210" y="110" width="100" height="80" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_0c04vhs_di" bpmnElement="Activity_0c04vhs">
+        <dc:Bounds x="340" y="110" width="100" height="80" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_0odpjve_di" bpmnElement="Activity_0odpjve">
+        <dc:Bounds x="470" y="110" width="100" height="80" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_1wgdm8y_di" bpmnElement="Activity_1wgdm8y">
+        <dc:Bounds x="600" y="110" width="100" height="80" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_0rucb30_di" bpmnElement="Activity_0rucb30">
+        <dc:Bounds x="340" y="210" width="100" height="80" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_0obr3kh_di" bpmnElement="Activity_0obr3kh">
+        <dc:Bounds x="470" y="210" width="100" height="80" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_066g5ka_di" bpmnElement="Activity_066g5ka">
+        <dc:Bounds x="600" y="210" width="100" height="80" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_1yanv32_di" bpmnElement="Activity_1yanv32">
+        <dc:Bounds x="210" y="320" width="100" height="80" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_0l4yfzf_di" bpmnElement="Activity_0l4yfzf">
+        <dc:Bounds x="210" y="210" width="100" height="80" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_14mab47_di" bpmnElement="Activity_14mab47">
+        <dc:Bounds x="340" y="320" width="100" height="80" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_0y8o0mh_di" bpmnElement="Activity_0y8o0mh">
+        <dc:Bounds x="470" y="320" width="100" height="80" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_1k7x5bi_di" bpmnElement="Activity_1k7x5bi">
+        <dc:Bounds x="600" y="320" width="100" height="80" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_1myw85e_di" bpmnElement="Activity_1myw85e">
+        <dc:Bounds x="210" y="420" width="100" height="80" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_0etqwvn_di" bpmnElement="Activity_0etqwvn">
+        <dc:Bounds x="340" y="420" width="100" height="80" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_1248gbq_di" bpmnElement="Activity_1248gbq">
+        <dc:Bounds x="470" y="420" width="100" height="80" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Participant_1iehgq7_di" bpmnElement="Participant_1iehgq7" isHorizontal="true">
+        <dc:Bounds x="780" y="90" width="590" height="170" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_0tid5jr_di" bpmnElement="Activity_0tid5jr">
+        <dc:Bounds x="830" y="120" width="100" height="80" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_0i55caw_di" bpmnElement="Activity_0i55caw">
+        <dc:Bounds x="960" y="120" width="100" height="80" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_13l87ok_di" bpmnElement="Activity_13l87ok">
+        <dc:Bounds x="1100" y="120" width="100" height="80" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_03bzc8f_di" bpmnElement="Activity_03bzc8f">
+        <dc:Bounds x="1250" y="120" width="100" height="80" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Participant_15hi4tr_di" bpmnElement="Participant_15hi4tr" isHorizontal="true">
+        <dc:Bounds x="780" y="270" width="590" height="150" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_14o7x74_di" bpmnElement="Activity_14o7x74">
+        <dc:Bounds x="830" y="300" width="100" height="80" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_1bhvlp7_di" bpmnElement="Activity_1bhvlp7">
+        <dc:Bounds x="970" y="300" width="100" height="80" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_1jw91px_di" bpmnElement="Activity_1jw91px">
+        <dc:Bounds x="1110" y="300" width="100" height="80" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_0bfe6ev_di" bpmnElement="Activity_0bfe6ev">
+        <dc:Bounds x="1240" y="300" width="100" height="80" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Participant_1udqlxg_di" bpmnElement="Participant_1udqlxg" isHorizontal="true">
+        <dc:Bounds x="780" y="440" width="300" height="140" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_04r475l_di" bpmnElement="Activity_04r475l">
+        <dc:Bounds x="840" y="460" width="100" height="80" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Participant_0m2kzhg_di" bpmnElement="Participant_0m2kzhg" isHorizontal="true">
+        <dc:Bounds x="1110" y="440" width="300" height="130" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_1jhux17_di" bpmnElement="Activity_1jhux17">
+        <dc:Bounds x="1160" y="470" width="100" height="80" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Participant_0uyhirh_di" bpmnElement="Participant_0uyhirh" isHorizontal="true">
+        <dc:Bounds x="160" y="550" width="600" height="140" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_0k8kx1g_di" bpmnElement="Activity_0k8kx1g">
+        <dc:Bounds x="210" y="580" width="100" height="80" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_02y4cih_di" bpmnElement="Activity_02y4cih">
+        <dc:Bounds x="340" y="580" width="100" height="80" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_03ngzen_di" bpmnElement="Activity_03ngzen">
+        <dc:Bounds x="470" y="580" width="100" height="80" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_024agjn_di" bpmnElement="Activity_024agjn">
+        <dc:Bounds x="610" y="580" width="100" height="80" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Participant_13q9elm_di" bpmnElement="Participant_13q9elm" isHorizontal="true">
+        <dc:Bounds x="160" y="720" width="690" height="150" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_0hsdd3o_di" bpmnElement="Activity_0hsdd3o">
+        <dc:Bounds x="210" y="750" width="100" height="80" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_01q3s66_di" bpmnElement="Activity_01q3s66">
+        <dc:Bounds x="340" y="750" width="100" height="80" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_06xuic0_di" bpmnElement="Activity_06xuic0">
+        <dc:Bounds x="470" y="750" width="100" height="80" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_1lyr1os_di" bpmnElement="Activity_1lyr1os">
+        <dc:Bounds x="590" y="750" width="100" height="80" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_0tgefo6_di" bpmnElement="Activity_0tgefo6">
+        <dc:Bounds x="720" y="750" width="100" height="80" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Participant_0ukqk3k_di" bpmnElement="Participant_0ukqk3k" isHorizontal="true">
+        <dc:Bounds x="160" y="900" width="780" height="200" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_1ymajs9_di" bpmnElement="Activity_1ymajs9">
+        <dc:Bounds x="210" y="910" width="100" height="80" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_0zmv52w_di" bpmnElement="Activity_0zmv52w">
+        <dc:Bounds x="350" y="910" width="100" height="80" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_17550jk_di" bpmnElement="Activity_17550jk">
+        <dc:Bounds x="490" y="910" width="100" height="80" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_0vp80q0_di" bpmnElement="Activity_0vp80q0">
+        <dc:Bounds x="630" y="910" width="100" height="80" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_0jn6sno_di" bpmnElement="Activity_0jn6sno">
+        <dc:Bounds x="210" y="1010" width="100" height="80" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_07nmtwo_di" bpmnElement="Activity_07nmtwo">
+        <dc:Bounds x="350" y="1010" width="100" height="80" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_07q7ldh_di" bpmnElement="Activity_07q7ldh">
+        <dc:Bounds x="490" y="1010" width="100" height="80" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_1dbus9s_di" bpmnElement="Activity_1dbus9s">
+        <dc:Bounds x="630" y="1010" width="100" height="80" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_1qu8s96_di" bpmnElement="Activity_1qu8s96">
+        <dc:Bounds x="780" y="910" width="100" height="80" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Participant_1f8tc9j_di" bpmnElement="Participant_1f8tc9j" isHorizontal="true">
+        <dc:Bounds x="870" y="720" width="300" height="150" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_1q2ud0q_di" bpmnElement="Activity_1q2ud0q">
+        <dc:Bounds x="920" y="750" width="100" height="80" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</bpmn:definitions>

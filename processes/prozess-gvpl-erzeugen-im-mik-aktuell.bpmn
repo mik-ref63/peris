@@ -21,14 +21,6 @@
       <bpmn:outgoing>Flow_1fm0cz4</bpmn:outgoing>
       <bpmn:messageEventDefinition id="MessageEventDefinition_1jt5rp2" />
     </bpmn:startEvent>
-    <bpmn:exclusiveGateway id="Gateway_0z3cbow">
-      <bpmn:incoming>Flow_0toxn4x</bpmn:incoming>
-      <bpmn:outgoing>Flow_1cy37ja</bpmn:outgoing>
-    </bpmn:exclusiveGateway>
-    <bpmn:sendTask id="Activity_149a5ct" name="Abgabe zur Prüfung an Fachreferate">
-      <bpmn:incoming>Flow_1cy37ja</bpmn:incoming>
-      <bpmn:outgoing>Flow_1ucsa1e</bpmn:outgoing>
-    </bpmn:sendTask>
     <bpmn:intermediateCatchEvent id="Event_12ya3w7">
       <bpmn:incoming>Flow_1ucsa1e</bpmn:incoming>
       <bpmn:outgoing>Flow_0m0p6nb</bpmn:outgoing>
@@ -55,13 +47,16 @@
       <bpmn:incoming>Flow_1du34xq</bpmn:incoming>
     </bpmn:endEvent>
     <bpmn:sequenceFlow id="Flow_1fm0cz4" sourceRef="StartEvent_17ckmf8" targetRef="Activity_1ej3ig5" />
-    <bpmn:sequenceFlow id="Flow_0toxn4x" sourceRef="Activity_1ej3ig5" targetRef="Gateway_0z3cbow" />
-    <bpmn:sequenceFlow id="Flow_1cy37ja" sourceRef="Gateway_0z3cbow" targetRef="Activity_149a5ct" />
+    <bpmn:sequenceFlow id="Flow_0toxn4x" sourceRef="Activity_1ej3ig5" targetRef="Activity_149a5ct" />
     <bpmn:sequenceFlow id="Flow_1ucsa1e" sourceRef="Activity_149a5ct" targetRef="Event_12ya3w7" />
     <bpmn:sequenceFlow id="Flow_0m0p6nb" sourceRef="Event_12ya3w7" targetRef="Activity_0z48sn9" />
     <bpmn:sequenceFlow id="Flow_12iv4l3" sourceRef="Activity_0z48sn9" targetRef="Event_1nb41ay" />
     <bpmn:sequenceFlow id="Flow_1ipsaro" sourceRef="Event_1nb41ay" targetRef="Activity_0dxk10u" />
     <bpmn:sequenceFlow id="Flow_1du34xq" sourceRef="Activity_0dxk10u" targetRef="Event_1jlk7cq" />
+    <bpmn:sendTask id="Activity_149a5ct" name="Abgabe zur Prüfung an Fachreferate">
+      <bpmn:incoming>Flow_0toxn4x</bpmn:incoming>
+      <bpmn:outgoing>Flow_1ucsa1e</bpmn:outgoing>
+    </bpmn:sendTask>
     <bpmn:textAnnotation id="TextAnnotation_1inxkw9">
       <bpmn:text>GVPL nach PDF konvertieren und dann auf HTML-Seite stellen</bpmn:text>
     </bpmn:textAnnotation>
@@ -209,14 +204,10 @@
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="Flow_0toxn4x_di" bpmnElement="Flow_0toxn4x">
         <di:waypoint x="430" y="660" />
-        <di:waypoint x="485" y="660" />
-      </bpmndi:BPMNEdge>
-      <bpmndi:BPMNEdge id="Flow_1cy37ja_di" bpmnElement="Flow_1cy37ja">
-        <di:waypoint x="535" y="660" />
-        <di:waypoint x="590" y="660" />
+        <di:waypoint x="550" y="660" />
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="Flow_1ucsa1e_di" bpmnElement="Flow_1ucsa1e">
-        <di:waypoint x="690" y="660" />
+        <di:waypoint x="650" y="660" />
         <di:waypoint x="752" y="660" />
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="Flow_0m0p6nb_di" bpmnElement="Flow_0m0p6nb">
@@ -241,12 +232,6 @@
           <dc:Bounds x="216" y="606" width="87" height="27" />
         </bpmndi:BPMNLabel>
       </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="Gateway_0z3cbow_di" bpmnElement="Gateway_0z3cbow" isMarkerVisible="true">
-        <dc:Bounds x="485" y="635" width="50" height="50" />
-      </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="Activity_1kk1rnc_di" bpmnElement="Activity_149a5ct">
-        <dc:Bounds x="590" y="620" width="100" height="80" />
-      </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Event_1843f6d_di" bpmnElement="Event_12ya3w7">
         <dc:Bounds x="752" y="642" width="36" height="36" />
       </bpmndi:BPMNShape>
@@ -265,6 +250,9 @@
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Event_1jlk7cq_di" bpmnElement="Event_1jlk7cq">
         <dc:Bounds x="1352" y="642" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_1kk1rnc_di" bpmnElement="Activity_149a5ct">
+        <dc:Bounds x="550" y="620" width="100" height="80" />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNEdge id="Association_10736nu_di" bpmnElement="Association_10736nu">
         <di:waypoint x="1266" y="622" />
@@ -336,7 +324,7 @@
         <di:waypoint x="1070" y="678" />
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="Flow_0ivfbmb_di" bpmnElement="Flow_0ivfbmb">
-        <di:waypoint x="650" y="620" />
+        <di:waypoint x="650" y="630" />
         <di:waypoint x="650" y="280" />
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="Flow_0lsmnak_di" bpmnElement="Flow_0lsmnak">

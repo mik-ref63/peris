@@ -1,2 +1,2 @@
 # peris
-Die Landesbasislösung des Land Brandenburg
+Die Landesbasislösung für das Personalinformationssystem des Land Brandenburg
